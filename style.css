@@ -1,3 +1,82 @@
+/* ===== SMALLER HEADER STYLES ===== */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem; /* Reduced from 2rem */
+}
+
+header img {
+    border-radius: 50%;
+    border: 3px solid #fff; /* Reduced from 5px */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto 0.5rem; /* Reduced bottom margin */
+    width: 150px; /* Reduced from 200px */
+    height: 150px; /* Added to maintain aspect ratio */
+    object-fit: cover; /* Ensures image fills space */
+}
+
+/* ===== ADJUSTED TITLE SIZE ===== */
 h1 {
-    color: blue;
-}                   
+    font-size: 2rem; /* Reduced from 3rem */
+    color: #fff;
+    text-shadow: 
+        0 0 3px #e73c7e, /* Reduced glow */
+        0 0 6px #23a6d5,
+        0 0 9px #23d5ab;
+    animation: glow 2s ease-in-out infinite alternate;
+    margin: 0 0 1rem 0; /* Reduced bottom margin */
+}
+
+/* Keep all other existing styles below this line */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+nav li:hover {
+    transform: translateY(-3px);
+}
+
+blockquote {
+    background: white;
+    padding: 1.5rem; /* Slightly reduced */
+    border-left: 4px solid #e74c3c; /* Reduced from 5px */
+    margin: 1.5rem 0; /* Reduced from 2rem */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+    font-style: italic;
+    font-size: 1.1rem;
+    border-radius: 0 6px 6px 0; /* Slightly reduced */
+}
+
+/* Rest of your existing CSS remains unchanged... */
